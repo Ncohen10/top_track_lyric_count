@@ -12,7 +12,7 @@
 
 ## To Install
 ```
-git clone https://github.com/Ncohen10/top_track_lyric_count/edit/master/README.md
+git clone https://github.com/Ncohen10/top_track_lyric_count
 pip install -r requirements.txt
 python server.py
 ```

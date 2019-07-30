@@ -15,4 +15,5 @@
 git clone https://github.com/Ncohen10/top_track_lyric_count/edit/master/README.md
 pip install -r requirements.txt
 python server.py
-go to http://localhost:8080
+```
+* Go to http://localhost:8080

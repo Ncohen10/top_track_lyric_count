@@ -1,13 +1,10 @@
 # Top Track Lyric Count #
 
-**This project graphs the frequency of lyrics from the top chartted song of a given country. A pie chart and bar graphed are created to visualize the data.**
-
-#### MusixMatch API ####
-* Uses the Musixmatch API to get the lyric data
-* The country is determined by the country_code argument in the lyrics.get_lyric_data(country_code) argument in the server.py file
-* country_code is set to 'us' by default
-* Gets 30% of the lyrics from the lyric body of a track
-* This is because the API being used is on the 'free' plan
-* The project will still work if you change to a paid API key
+**This project graphs the frequency of lyrics from the top chart song of a given country (set to US by default). A pie chart and bar graphed are created to visualize the data. The chart and graph is made using the Plot.ly library and the lyric data is fetched using the Musixmatch API.**
 
 
+
+
+###### Top Song as of 7/30/2019 (Lil Nas X - Old Town Road):
+![alt text](https://github.com/Ncohen10/top_track_lyric_count/blob/master/assets/pie_chart.png)
+![alt_text](https://github.com/Ncohen10/top_track_lyric_count/blob/master/assets/bar_graph.png)

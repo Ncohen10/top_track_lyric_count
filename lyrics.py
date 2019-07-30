@@ -50,8 +50,8 @@ def get_lyric_data(country_code):
     def lyrics_count():
         lyrics = find_lyrics()
         lyric_list = re.sub("[^a-zA-Z0-9_']", " ", lyrics).split()
-        how_many = Counter(map(str.lower, lyric_list))
-        return how_many
+        amount = Counter(map(str.lower, lyric_list))
+        return amount
 
         # Maps variables 'x' and 'y' to a dictionary of lyrics.
     def bar_graph_format():

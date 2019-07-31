@@ -4,12 +4,15 @@ import re
 from collections import Counter
 
 
+API_KEY = "PUT API KEY HERE"
+
 def get_lyric_data(country_code):
 
     # Gets track ID from the top charts of a country
     # Determined by the country code
     def get_track_id():
-        url = ("https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=69af09eed279453b11832306fcdf0187&chart_name=top&page=1&page_size=5&country="
+        url = ("https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey="
+               + API_KEY + "&chart_name=top&page=1&page_size=5&country="
                + country_code + "&f_has_lyrics=1")
         response = urllib.request.urlopen(url)
         content = response.read().decode()

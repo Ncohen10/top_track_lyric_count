@@ -10,7 +10,7 @@
 ![alt_text](https://github.com/Ncohen10/top_track_lyric_count/blob/master/assets/bar_graph.png)
 
 
-## To Install
+## To Run
 Ensure pip is installed and type the following in a Python terminal:
 ```
 git clone https://github.com/Ncohen10/top_track_lyric_count

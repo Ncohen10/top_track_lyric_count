@@ -17,5 +17,6 @@ git clone https://github.com/Ncohen10/top_track_lyric_count
 cd top_track_lyric_count
 py -m pip install -r requirements.txt
 py server.py
+Paste your musixmatch API key
 ```
 * Go to http://localhost:8080

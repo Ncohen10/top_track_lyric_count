@@ -10,13 +10,13 @@
 ![alt_text](https://github.com/Ncohen10/top_track_lyric_count/blob/master/assets/bar_graph.png)
 
 
-## To Run
+## To Demo
 Ensure pip is installed and type the following in a Python terminal:
 ```
 git clone https://github.com/Ncohen10/top_track_lyric_count
 cd top_track_lyric_count
 py -m pip install -r requirements.txt
 py server.py
-Paste your musixmatch API key
 ```
+* Paste your musixmatch API key into the terminal
 * Go to http://localhost:8080

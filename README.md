@@ -11,6 +11,7 @@
 
 
 ## To Install
+Ensure pip is installed and type the following in a Python terminal:
 ```
 git clone https://github.com/Ncohen10/top_track_lyric_count
 pip install -r requirements.txt

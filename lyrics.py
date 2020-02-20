@@ -4,7 +4,8 @@ import re
 from collections import Counter
 
 
-API_KEY = "PUT API KEY HERE"
+API_KEY = input("Paste your Musixmatch API key: ")
+
 
 def get_lyric_data(country_code):
 
@@ -22,16 +23,18 @@ def get_lyric_data(country_code):
 
         # Gets track ID from top charts of France (not used)
     def get_track_id_FR():
-        url = 'https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=69af09eed279453b11832306fcdf0187&chart_name=top&page=1&page_size=5&country=fr&f_has_lyrics=1'
+        url = 'https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=' + API_KEY + \
+              '&chart_name=top&page=1&page_size=5&country=fr&f_has_lyrics=1'
         response = urllib.request.urlopen(url)
         content = response.read().decode()
         content = json.loads(content)
         track_id = content["message"]["body"]["track_list"]["track"]["track_id"]
         return str(track_id)
 
-        # Gets track ID from top charts of world.
+        # Gets track ID from top charts of world (not used)
     def get_track_id_world():
-        url = 'https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=69af09eed279453b11832306fcdf0187&chart_name=top&page=1&page_size=5&country=xw&f_has_lyrics=1'
+        url = 'https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=' + API_KEY + \
+              '&chart_name=top&page=1&page_size=5&country=xw&f_has_lyrics=1'
         response = urllib.request.urlopen(url)
         content = response.read().decode()
         content = json.loads(content)
@@ -41,8 +44,8 @@ def get_lyric_data(country_code):
         # Gets the lyrics from a track
     def find_lyrics():
         track_id = get_track_id()
-        url = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?apikey=69af09eed279453b11832306fcdf0187&"\
-              + "track_id=" + track_id
+        url = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?apikey=" + API_KEY + \
+              "&track_id=" + track_id
         response = urllib.request.urlopen(url)
         content = response.read().decode()
         content = json.loads(content)
